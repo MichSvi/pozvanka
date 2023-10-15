@@ -15,6 +15,11 @@ body{
 h1{
     font-family: 'Broadway', sans-serif;
 }
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+}
 .title{
     text-align: center;
 }
@@ -22,15 +27,213 @@ h1{
     display: flex;
     justify-content: space-evenly;
 }
-.life-lines{
-    margin-left: 32%;
-    margin-top: 10%;
+.life-lines-svg{
+    margin-left: 10%;
+    width: 80%;
+    height: 80%;
 }
-@media screen and (max-width: 1024px){
+.text{
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    fill: #E6E8E6;  
+}
+.circle-group .circle {
+    transition: 0.4s;
+    cursor: pointer;
+    transform-origin: 43.5px 43.5px;
+}
 
+.circle-group:hover  .circle {
+    transform: scale(2.5);
+    z-index: 1000;
+  
+
+}
+.circle-group .text {  
+    opacity: 0;
+    transition: opacity 0.2s, opacity 0.1s 0.2s;
+}
+.circle-group:hover  .text{
+    opacity: 1;
+}
+.small{
+    display: none;
+}
+.opacity-div{
+    background-color: #131936;
+    text-align: center;
+
+}
+.hor-line{
+    height: 8px;
+    background-color: #748E54;
+    border: none;
+}
+.where-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.where-text h1{
+    font-size: 3em;
+}
+.where-text h2{
+    font-size: 2.5em;
+}
+.invite{
+    margin: 50px 80px
+}
+.invite-text{
+    font-size: 4em;
+    padding: 80px 200px;
+}
+.timer{
+    display: flex;
+    flex-direction: column;
+}
+.timer-text{
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    margin: 0 20%;
+}
+.demo-text{
+    font-size: 7em;
+    margin-bottom: 20px;
+}
+.timer-subtext{
+    margin: 0 2em;
+}
+
+.map{
+    margin: 10% 0;
+    position:relative;
+    height:0;
+    padding-bottom:56.25%;
+}
+@media screen and (max-width: 1440px){
+    h1{
+        font-size: 1.7em
+    }
+    h2{
+        font-size: 1.2em;
+    }
     .life-lines-svg {
-        width: 85%;
-        height: 85%;
+        margin-left: 3%;
+        width: 90%;
+        height: 90%;
 
+    }
+    .invite-text{
+        font-size: 3.2em;
+        padding: 20px 100px;
+    }
+    .timer-text{
+        font-size: 2em;
+    }
+    .timer-subtext{
+        margin: 0 1.5em;
+    }
+}
+@media  screen and (max-width: 1024px) {
+    .invite-text{
+        font-size: 2em;
+        padding: 10%;
+    }
+    .where-text h1{
+        font-size: 2em;
+    }
+    .where-text h2{
+        font-size: 1.5em;
+    }
+    .demo-text{
+        font-size: 3.7em;
+    }
+    .timer-text{
+        font-size: 1em;
+    }
+    .timer-subtext{
+        margin: 0 1.5em;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .big{
+        display: none;
+    }
+    .small{
+        display: block;
+        margin-top: 5%;
+        margin-left: 15%;
+        width: 75%;
+        height: 75%;
+    }
+
+    h1{
+        font-size: 1.7em
+    }
+    h2{
+        font-size: 1.2em;
+    }
+
+    .circle:hover{
+        transform: scale(2.25);
+    
+    }
+    .invite{
+        margin: 10%;
+    }
+    .invite-text{
+        font-size: 2em;
+        padding: 5%;
+    }
+    .hor-line{
+        height: 5px;
+    }
+    .where-text h1{
+        font-size: 1.5em;
+    }
+    .where-text h2{
+        font-size: 1em;
+    }
+    .demo-text{
+        font-size: 3.5em;
+    }
+
+}
+
+
+@media screen and (max-width: 425px){
+
+    h1{
+        font-size: 1.2em
+    }
+    h2{
+        font-size: 0.7em;
+    }
+    .invite-text{
+        font-size: 1.5em;
+        padding: 0;
+    }
+    .hor-line{
+        height: 3px;
+    }
+    .where-text h1{
+        font-size: 1em;
+    }
+    .where-text h2{
+        font-size: 0.7em;
+    }
+    .demo-text{
+        font-size: 1.5em;
+    }
+    .timer-text{
+        font-size: 0.8em;
+    }
+    .timer-subtext{
+        margin: 0 1em;
     }
 }
