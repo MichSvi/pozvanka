@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'myBroadway';
+    src: url('Broadway\ Regular.ttf') format('woff2');
+    /* Other font properties, like font-weight and font-style, can be specified here */
+  }
+  
 .gold{
     color: #FFB400;
 }
@@ -13,7 +19,7 @@ body{
     margin: 0;
 }
 h1{
-    font-family: 'Broadway', sans-serif;
+    font-family: 'myBroadway', sans-serif;
 }
 h2{
     font-family: 'Montserrat', sans-serif;
