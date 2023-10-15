@@ -5,20 +5,422 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pozvanka</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Broadway">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script defer src="app.js"></script>
 </head>
 <body>
-<h1 class="gold title">Pozvánka</h1>
-<div class="names">
-    <h1  class="gold">Peter</h1>
-    <h1  class="gold">Andrea</h1>
-</div>
-<div class="life-lines">
-    <svg class="life-lines-svg" xmlns="http://www.w3.org/2000/svg" width="1007.792" height="10607.151" viewBox="0 0 1007.792 10607.151">
-        <path id="Path_1" data-name="Path 1" d="M2521.881,705.606C2448.547,992.273,2404.123,946.333,2357.456,1093s60,220,93.333,433.333-67.3,218.25,0,366.667,199.944,172.533,235.877,280.333c93.333,280,80,380,0,660S2513.333,3146.666,2593.333,3400c67.76,214.573,51.807,368.644,51.807,368.644S2594.123,3949,2593.333,4073c18.7,226.25,101.592,250,62.79,430s-194,299-188,482,227.5,219,266,386c63.515,258.848-315.273,280.06-369.818,607.333s454.545,315.151,663.636,618.182c157.576,290.909-681.818,657.575-654.545,987.878S3218.85,7899.545,3234,8308.637s-667.227,754.545-627.273,1060.605,669.7,521.213,727.273,869.7-800,1051.515-800,1051.515" transform="translate(-2337.492 -695.265)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-linejoin="round" stroke-width="17"/>
-        <path id="Path_2" data-name="Path 2" d="M2405.756,787.424c73.333,286.666,364.061,265.576,437.394,392.242s-32,220-160,433.333c-56.192,93.653-73.333,226.667-100,426.667-19.158,147.014-85.707,259.553-100.667,435.333" transform="translate(-2069.852 -695.265)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-linejoin="round" stroke-width="17"/>
-    </svg>
-</div>
+  <h1 class="gold title">Pozvánka</h1>
+  <h2 class="white title" >Dôležité udalosti v našom živote</h2>
+  <div class="names">
+      <h1  class="gold">Peter</h1>
+      <h1  class="gold">Andrea</h1>
+  </div>
+  <svg class="life-lines-svg big" xmlns="http://www.w3.org/2000/svg" width="1775.543" height="5500" viewBox="-100 -100 1675.543 5400">
+    
+    <path id="Path_1" data-name="Path 1" d="M2521.881,705.606C2448.547,992.273,2404.123,946.333,2357.456,1093s60,220,93.333,433.333-67.3,218.25,0,366.667,199.944,172.533,235.877,280.333c93.333,280,80,380,0,660S2513.333,3146.666,2593.333,3400c67.76,214.573,51.807,368.644,51.807,368.644S2594.123,3949,2593.333,4073c18.7,226.25,101.592,250,62.79,430s-194,299-188,482,227.5,219,266,386c63.515,258.848-315.273,280.06-369.818,607.333s454.545,315.151,663.636,618.182" transform="translate(-1898.623 -643)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-linejoin="round" stroke-width="17"/>
+    <path id="Path_2" data-name="Path 2" d="M2405.756,787.424c73.333,286.666,364.061,265.576,437.394,392.242s-32,220-160,433.333c-56.192,93.653-73.333,226.667-100,426.667-19.158,147.014-85.707,259.553-100.667,435.333" transform="translate(-1630.984 -643)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-linejoin="round" stroke-width="17"/>
+    
+    <line id="peter_big_l_1" x1="445" transform="translate(174 87)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-width="5"/>
+    <text class="text" transform="translate(174.5 29)">
+      <tspan x="0" y="0">30.7.1973 </tspan>
+      <tspan x="0" y="37">Dolný Kubín</tspan>
+    </text>
+    <g id="peter_big_1" data-name="peter_1" transform="translate(586.5)">
+      <g class="circle-group">
+        <circle class="circle" cx="43.5" cy="43.5" r="43.5" fill="#748e54"/>
+        <text class="text" x="43.5" y="43.5" dominant-baseline="middle" text-anchor="middle">Narodenie</text>
+      </g>
+    </g>
+    
+
+    <line id="peter_big_l_2" data-name="Line 29" x1="445" transform="translate(2.5 572)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-width="5"/>
+    <text class="text" transform="translate(2.5 514)">
+      <tspan x="0" y="0">kedy</tspan>
+      <tspan x="0" y="37">kde</tspan>
+    </text>
+    <g  id="peter_big_2" data-name="peter_2"transform="translate(403.5 482)" >
+      <g class="circle-group">
+        <circle class="circle" cx="43.5" cy="43.5" r="43.5"  fill="#748e54"/>
+        <text class="text" x="43.5" y="43.5" dominant-baseline="middle" text-anchor="middle">X</text>
+      </g>
+    </g>
+
+    <line id="peter_big_l_3" data-name="Line 30" x1="445" transform="translate(97.543 1221)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-width="5"/>
+    <text class="text" transform="translate(97.543 1163)">
+      <tspan x="0" y="0">kedy</tspan>
+      <tspan x="0" y="37">kde</tspan>
+    </text>
+    <g  id="peter_big_3" data-name="peter_3" transform="translate(490.5 1132)">
+      <g class="circle-group">
+        <circle class="circle" cx="43.5" cy="43.5" r="43.5"  fill="#748e54"/>
+        <text class="text" x="43.5" y="43.5" dominant-baseline="middle" text-anchor="middle">X</text>
+      </g>
+    </g>
+
+
+    <line id="andrea_big_l_1" data-name="Line 28" x1="445" transform="translate(783.5 174)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-width="5"/>
+    <text class="text" transform="translate(1000 116)">
+      <tspan x="0" y="0">6.11.1973</tspan>
+      <tspan x="0" y="37">Dolný Kubín</tspan>
+    </text>
+    <g id="andrea_big_1" data-name="andrea_1" transform="translate(722.5 87)">
+      <g class="circle-group">
+        <circle class="circle" cx="43.5" cy="43.5" r="43.5" fill="#748e54"/>
+        <text class="text" x="43.5" y="43.5" dominant-baseline="middle" text-anchor="middle">Narodenie</text>
+      </g>
+    </g>
+
+    <line id="andrea_big_l_2" data-name="Line 27" x1="445" transform="translate(1228.043 569)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-width="5"/>
+    <text class="text" transform="translate(1500 511)">
+      <tspan x="0" y="0">kedy</tspan>
+      <tspan x="0" y="37">kde</tspan>
+    </text>
+    <g  id="andrea_big_2" data-name="andrea_2" transform="translate(1167.5 482)">
+      <g class="circle-group">
+        <circle class="circle" cx="43.5" cy="43.5" r="43.5" fill="#748e54"/>
+        <text class="text" x="43.5" y="43.5" dominant-baseline="middle" text-anchor="middle">X</text>
+      </g>
+    </g>
+
+    <line id="andrea_big_l_3" data-name="Line 18" x1="445" transform="translate(1005.543 1073)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-width="5"/>
+    <text class="text" transform="translate(1300 1015)">
+      <tspan x="0" y="0">kedy</tspan>
+      <tspan x="0" y="37">kde</tspan>
+    </text>
+    <g  id="andrea_big_3" data-name="andrea_3"  transform="translate(976.5 984)">
+      <g class="circle-group">
+        <circle class="circle" cx="43.5" cy="43.5" r="43.5"  fill="#748e54"/>
+        <text class="text" x="43.5" y="43.5" dominant-baseline="middle" text-anchor="middle">X</text>
+      </g>
+    </g>
+
+    <line id="spolu_big_l_1" data-name="Line 19" x1="445" transform="translate(853 1851)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-width="5"/>
+    <text class="text" transform="translate(1050 1793)">
+      <tspan x="0" y="0">12.6.1999</tspan>
+      <tspan x="0" y="37">Dolný Kubín</tspan>
+    </text>
+    <g id="spolu_big_1" data-name="spolu_1" transform="translate(809.5 1762)">
+      <g class="circle-group">
+        <circle class="circle" cx="43.5" cy="43.5" r="43.5" fill="#748e54"/>
+        <text class="text" x="43.5" y="43.5" dominant-baseline="middle" text-anchor="middle">Svadba</text>
+      </g>
+    </g>
+
+    <line id="spolu_big_l_2" data-name="Line 20" x1="445" transform="translate(374.5 2073)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-width="5"/>
+    <text class="text" transform="translate(374.5 2015)">
+      <tspan x="0" y="0">9.4.2000</tspan>
+      <tspan x="0" y="37">Dolný Kubín</tspan>
+    </text>
+    <g id="spolu_big_2" data-name="spolu_2" transform="translate(784.5 1984)">
+      <g class="circle-group">
+        <circle class="circle"cx="43.5" cy="43.5" r="43.5" fill="#748e54"/>
+        <text class="text" x="43.5" y="43.5" dominant-baseline="middle" text-anchor="middle">
+          <tspan x="43.5" dy="-0.5em">Miška</tspan>
+          <tspan x="43.5" dy="1em">narodenie</tspan>
+        </text>
+      </g>
+    </g>
+
+    <line id="spolu_big_l_3" data-name="Line 21" x1="445" transform="translate(697.5 2435)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-width="5"/>
+    <text class="text" transform="translate(900 2377)">
+      <tspan x="0" y="0">13.9.2002</tspan>
+      <tspan x="0" y="37">Dolný Kubín</tspan>
+    </text>
+    <g id="spolu_big_3" data-name="spolu_3" transform="translate(673.5 2348)">
+      <g class="circle-group">
+        <circle class="circle"cx="43.5" cy="43.5" r="43.5" fill="#748e54"/>
+        <text class="text" x="43.5" y="43.5" dominant-baseline="middle" text-anchor="middle">
+          <tspan x="43.5" dy="-0.5em">Adamko</tspan>
+          <tspan x="43.5" dy="1em">narodenie</tspan>
+        </text>
+      </g>
+    </g>
+
+    <line id="spolu_big_l_4" data-name="Line 22" x1="445" transform="translate(286.5 3169)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-width="5"/>
+    <text class="text" transform="translate(286.5 3111)">
+      <tspan x="0" y="0">2009</tspan>
+      <tspan x="0" y="37">Osada Trniny</tspan>
+    </text>
+    <g id="spolu_big_4" data-name="spolu_4" transform="translate(695 3080)">
+      <g class="circle-group">
+        <circle class="circle" cx="43.5" cy="43.5" r="43.5" fill="#748e54"/>
+        <text class="text" x="43.5" y="43.5" dominant-baseline="middle" text-anchor="middle">
+          <tspan x="43.5" dy="-0.5em">Postavenie</tspan>
+          <tspan x="43.5" dy="1em">chatky</tspan>
+        </text>
+      </g>
+    </g>
+
+    <line id="spolu_big_l_5" data-name="Line 23" x1="445" transform="translate(763.5 3851)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-width="5"/>
+    <text class="text" transform="translate(950 3793)">
+      <tspan x="0" y="0">25.3.2014</tspan>
+      <tspan x="0" y="37">Dolný Kubín</tspan>
+    </text>
+    <g id="spolu_big_5" data-name="spolu_5" transform="translate(720 3760)">
+      <g class="circle-group">
+        <circle class="circle" cx="43.5" cy="43.5" r="43.5" fill="#748e54"/>
+        <text class="text" x="43.5" y="43.5" dominant-baseline="middle" text-anchor="middle">
+          <tspan x="43.5" dy="-0.5em">Miško</tspan>
+          <tspan x="43.5" dy="1em">narodenie</tspan>
+        </text>
+      </g>
+    </g>
+
+    <line id="spolu_big_l_6" data-name="Line 24" x1="445" transform="translate(140.5 4388)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-width="5"/>
+    <text class="text" transform="translate(140.5 4330)">
+      <tspan x="0" y="0">2017</tspan>
+      <tspan x="0" y="37">Oravská Poruba</tspan>
+    </text>
+    <g id="spolu_big_6" data-name="spolu_6" transform="translate(526.5 4298)">
+      <g class="circle-group">
+        <circle class="circle" cx="43.5" cy="43.5" r="43.5" fill="#748e54"/>
+        <text class="text" x="43.5" y="43.5" dominant-baseline="middle" text-anchor="middle">
+          <tspan x="43.5" dy="-0.5em">Postavenie</tspan>
+          <tspan x="43.5" dy="1em">domu</tspan>
+        </text>
+      </g>
+    </g>
+
+    <line id="spolu_big_l_7" data-name="Line 26" x1="445" transform="translate(849.5 4811)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-width="5"/>
+    <text class="text" transform="translate(1000 4753)">
+      <tspan x="0" y="0">2020</tspan>
+      <tspan x="0" y="37">Oravská Poruba</tspan>
+    </text>
+    <g id="spolu_big_7" data-name="spolu_7" transform="translate(806.5 4723)">
+      <g class="circle-group">
+        <circle class="circle" cx="43.5" cy="43.5" r="43.5" fill="#748e54"/>
+        <text class="text" x="43.5" y="43.5" dominant-baseline="middle" text-anchor="middle">
+          <tspan x="43.5" dy="-0.5em">Postavenie</tspan>
+          <tspan x="43.5" dy="1em">kambodže</tspan>
+        </text>
+      </g>
+    </g>
+
+    <line id="spolu_big_l_8" data-name="Line 25" x1="445" transform="translate(25.5 5418)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-width="5"/>
+    <text class="text" transform="translate(25.2 5360)">
+      <tspan x="0" y="0">4.11.2023</tspan>
+      <tspan x="0" y="37">Oravská Poruba</tspan>
+    </text>
+    <g id="spolu_big_8" data-name="spolu_8" transform="translate(411.5 5328)">
+      <g class="circle-group">
+        <circle class="circle"cx="43.5" cy="43.5" r="43.5" fill="#748e54"/>
+        <text class="text" x="43.5" y="43.5" dominant-baseline="middle" text-anchor="middle">
+          <tspan x="43.5" dy="-0.5em">Oslava 50.</tspan>
+          <tspan x="43.5" dy="1em">narodenín</tspan>
+        </text>
+      </g>
+    </g>
+
+  </svg>
+
+  <svg class="small" xmlns="http://www.w3.org/2000/svg" width="349" height="2500" viewBox="0 0 349 2500">
+    <path id="Path_6" data-name="Path 6" d="M3898.667,259.333S3907.333,282.667,3902,330s-52.667,104.667-44.667,168,71.333,81.333,74.667,166-68.667,97.333-51.333,180.667c16.667,84,100.667,91,101.333,191.333s-78.667,123.333-72.667,203.333S4022.667,1350,4030,1421.333s-109.333,165.333-104,252,89.333,104,90.667,200S3901,2005,3903,2117s159.5,129,163,230-195,175.5-193,274,184,98,193,222" transform="translate(-3785.5 -240)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-width="5"/>
+    <path id="Path_7" data-name="Path 7" d="M4018.667,265.333c-9.333,44.667,60,62.167,66,127.333s-81.5,128.667-77.333,196S4116,673.333,4094,756.667,3985.333,920,3976.667,1006" transform="translate(-3785.5 -240)" fill="none" stroke="#ffb400" stroke-width="5"/>
+    <circle id="peter_1" cx="12.5" cy="12.5" r="12.5" transform="translate(96.5)" fill="#748e54"/>
+    <line id="peter_l_1" data-name="Line 33" x1="115" transform="translate(1 25.5)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-width="2"/>
+    <g>
+      <text transform="translate(1.5 41)" fill="#e6e8e6" font-size="10" font-family="Montserrat">
+        <tspan x="0" y="0">30.7.1973 </tspan>
+        <tspan x="0" y="13">Dolný Kubín</tspan>
+      </text>
+      <text transform="translate(1.5 16)" fill="#e6e8e6" font-size="15" font-family="Montserrat"><tspan x="0" y="0">Narodenie</tspan></text>
+    </g>
+
+    <circle id="peter_2"  cx="12.5" cy="12.5" r="12.5" transform="translate(58.5 231)" fill="#748e54"/>
+    <line id="peter_l_2" data-name="Line 36" x1="115" transform="translate(71.5 258)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-width="2"/>
+    <g>
+      <text transform="translate(150.5 274.5)" fill="#e6e8e6" font-size="10" font-family="Montserrat">
+        <tspan x="0" y="0">kedy </tspan>
+        <tspan x="0" y="13">kde</tspan>
+      </text>
+      <text transform="translate(150.5 249.5)" fill="#e6e8e6" font-size="15" font-family="Montserrat"><tspan x="0" y="0">co</tspan></text>
+    </g>
+
+    <circle id="peter_3" cx="12.5" cy="12.5" r="12.5" transform="translate(132.5 396)" fill="#748e54"/>
+    <line id="peter_l_3" data-name="Line 38" x1="115" transform="translate(29.5 422)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-width="2"/>
+    <g>
+      <text transform="translate(29.5 438.5)" fill="#e6e8e6" font-size="10" font-family="Montserrat">
+        <tspan x="0" y="0">kedy </tspan>
+        <tspan x="0" y="13">kde</tspan>
+      </text>
+      <text transform="translate(29.5 413.5)" fill="#e6e8e6" font-size="15" font-family="Montserrat"><tspan x="0" y="0">co</tspan></text>
+    </g>
+
+
+
+    <circle id="andrea_1" cx="12.5" cy="12.5" r="12.5" transform="translate(220.5 7)" fill="#748e54"/>
+    <line id="andrea_l_1" data-name="Line 34" x1="115" transform="translate(233 33.5)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-width="2"/>
+    <g>
+      <text transform="translate(269.5 49)" fill="#e6e8e6" font-size="10" font-family="Montserrat">
+        <tspan x="0" y="0">6.11.1973 </tspan>
+        <tspan x="0" y="13">Dolný Kubín</tspan>
+      </text>
+      <text transform="translate(269.5 25)" fill="#e6e8e6" font-size="15" font-family="Montserrat"><tspan x="0" y="0">Narodenie</tspan></text>
+
+    </g>
+    <circle id="andrea_2" cx="12.5" cy="12.5" r="12.5" transform="translate(286.5 141)" fill="#748e54"/>
+    <line id="andrea_l_2" data-name="Line 35" x1="115" transform="translate(185.5 167)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-width="2"/>
+    <g>
+      <text transform="translate(185.5 183.5)" fill="#e6e8e6" font-size="10" font-family="Montserrat">
+        <tspan x="0" y="0">kedy </tspan>
+        <tspan x="0" y="13">kde</tspan>
+      </text>
+      <text transform="translate(185.5 158.5)" fill="#e6e8e6" font-size="15" font-family="Montserrat"><tspan x="0" y="0">co</tspan></text>
+    </g>
+
+    <circle id="andrea_3" cx="12.5" cy="12.5" r="12.5" transform="translate(208.5 337)" fill="#748e54"/>
+    <line id="andrea_l_3" data-name="Line 37" x1="115" transform="translate(223.5 363)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-width="2"/>
+    <g>
+      <text transform="translate(303.5 379.5)" fill="#e6e8e6" font-size="10" font-family="Montserrat">
+        <tspan x="0" y="0">kedy </tspan>
+        <tspan x="0" y="13">kde</tspan>
+      </text>
+      <text transform="translate(303.5 354.5)" fill="#e6e8e6" font-size="15" font-family="Montserrat"><tspan x="0" y="0">co</tspan></text>
+    </g>
+
+
+    <circle id="spolu_1" cx="12.5" cy="12.5" r="12.5" transform="translate(180.5 749)" fill="#748e54"/>
+    <line id="spolu_l_1" data-name="Line 39" x1="115" transform="translate(78.5 775)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-width="2"/>
+    <g>
+      <text transform="translate(78.5 791.5)" fill="#e6e8e6" font-size="10" font-family="Montserrat">
+        <tspan x="0" y="0">kedy </tspan>
+        <tspan x="0" y="13">Dolný Kubín</tspan>
+      </text>
+      <text transform="translate(78.5 766.5)" fill="#e6e8e6" font-size="15" font-family="Montserrat"><tspan x="0" y="0">Svadba</tspan></text>
+    </g>
+
+    <circle id="spolu_2" cx="12.5" cy="12.5" r="12.5" transform="translate(111.5 978)" fill="#748e54"/>
+    <line id="spolu_l_2" data-name="Line 43" x1="115" transform="translate(123.5 1004)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-width="2"/>
+    <g>
+      <text transform="translate(200 1020.5)" fill="#e6e8e6" font-size="10" font-family="Montserrat">
+        <tspan x="0" y="0">9.4.2000</tspan>
+        <tspan x="0" y="13">Dolný Kubín</tspan>
+      </text>
+      <text transform="translate(160 975.5)" fill="#e6e8e6" font-size="15" font-family="Montserrat">
+        <tspan x="0" y="0">Miška</tspan>
+        <tspan x="0" y="18">narodenie</tspan>
+      </text>
+    </g>
+
+    <circle id="spolu_3" cx="12.5" cy="12.5" r="12.5" transform="translate(230.5 1165)" fill="#748e54"/>
+    <line id="spolu_l_3" data-name="Line 40" x1="115" transform="translate(128.5 1191)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-width="2"/>
+    <g>
+      <text transform="translate(128.5 1207.5)" fill="#e6e8e6" font-size="10" font-family="Montserrat">
+        <tspan x="0" y="0">13.9.2002 </tspan>
+        <tspan x="0" y="13">Dolný Kubín</tspan>
+      </text>
+      <text transform="translate(128.5 1162.5)" fill="#e6e8e6" font-size="15" font-family="Montserrat">
+        <tspan x="0" y="0">Adam</tspan>
+        <tspan x="0" y="18">narodenie</tspan>
+      </text>
+    </g>
+
+    <circle id="spolu_4" cx="12.5" cy="12.5" r="12.5" transform="translate(129.5 1415)" fill="#748e54"/>
+    <line id="spolu_l_4" data-name="Line 41" x1="115" transform="translate(140.5 1441)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-width="2"/>
+    <g>
+      <text transform="translate(175 1457.5)" fill="#e6e8e6" font-size="10" font-family="Montserrat">
+        <tspan x="0" y="0">2009</tspan>
+        <tspan x="0" y="13">Osada Trniny</tspan>
+      </text>
+      <text transform="translate(175 1412.5)" fill="#e6e8e6" font-size="15" font-family="Montserrat">
+        <tspan x="0" y="0">Postavenie</tspan>
+        <tspan x="0" y="18">chatky</tspan>
+      </text>
+    </g>
+
+    <circle id="spolu_5" cx="12.5" cy="12.5" r="12.5" transform="translate(218.5 1610)" fill="#748e54"/>
+    <line id="spolu_l_5" data-name="Line 42" x1="115" transform="translate(116.5 1636)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-width="2"/>
+    <g>
+      <text transform="translate(116.5 1652.5 )" fill="#e6e8e6" font-size="10" font-family="Montserrat">
+        <tspan x="0" y="0">25.3.2014 </tspan>
+        <tspan x="0" y="13">Dolný Kubín</tspan>
+      </text>
+      <text transform="translate(116.5 1607.5)" fill="#e6e8e6" font-size="15" font-family="Montserrat">
+        <tspan x="0" y="0">Miško</tspan>
+        <tspan x="0" y="18">narodenie</tspan>
+      </text>
+    </g>
+
+    <circle id="spolu_6" cx="12.5" cy="12.5" r="12.5" transform="translate(105.5 1851)" fill="#748e54"/>
+    <path id="spolu_l_6" data-name="Path 8" d="M115,0H0" transform="translate(116.5 1877)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-width="2"/>
+    <g>
+      <text transform="translate(150 1893.5)" fill="#e6e8e6" font-size="10" font-family="Montserrat">
+        <tspan x="0" y="0">2017</tspan>
+        <tspan x="0" y="13">Oravská Poruba</tspan>
+      </text>
+      <text transform="translate(150 1848.5)" fill="#e6e8e6" font-size="15" font-family="Montserrat">
+        <tspan x="0" y="0">Postavenie</tspan>
+        <tspan x="0" y="18">domu</tspan>
+      </text>
+    </g>
+
+    <circle id="spolu_7" cx="12.5" cy="12.5" r="12.5" transform="translate(265.5 2086)" fill="#748e54"/>
+    <path id="spplu_l_7" data-name="Path 9" d="M115,0H0" transform="translate(165.5 2112)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-width="2"/>
+    <g>
+      <text transform="translate(165.5 2128.5)" fill="#e6e8e6" font-size="10" font-family="Montserrat">
+        <tspan x="0" y="0">2020</tspan>
+        <tspan x="0" y="13">Oravská Poruba</tspan>
+      </text>
+      <text transform="translate(165.5 2083.5)" fill="#e6e8e6" font-size="15" font-family="Montserrat">
+        <tspan x="0" y="0">Postavenie</tspan>
+        <tspan x="0" y="18">kambodže</tspan>
+      </text>
+    </g>
+
+    <circle id="spolu_8" cx="12.5" cy="12.5" r="12.5" transform="translate(74.5 2356)" fill="#748e54"/>
+    <path id="spolu_l_8" data-name="Path 10" d="M115,0H0" transform="translate(87.5 2382)" fill="none" stroke="#ffb400" stroke-linecap="round" stroke-width="2"/>
+    <g>
+      <text transform="translate(120 2398.5)" fill="#e6e8e6" font-size="10" font-family="Montserrat">
+        <tspan x="0" y="0">4.11.2023 </tspan>
+        <tspan x="0" y="13">Oravská Poruba</tspan>
+      </text>
+      <text transform="translate(120 2353.5)" fill="#e6e8e6" font-size="15" font-family="Montserrat">
+        <tspan x="0" y="0">Oslava 50.</tspan>
+        <tspan x="0" y="18">narodenín</tspan>
+      </text>
+    </g>
+  </svg>
+
+
+  <div class="opacity-div">
+    <div class="invite">
+      <h1 class="gold invite-text">
+        Pozývame Vás na oslavu našich 50. narodenín
+      </h1>
+      <div class="when">
+        <div class="where-text"><h1 class="gold">Kedy?</h2> <h2 class="white">4.11.2023 o 17:00</h2></div>
+        <hr class="hor-line">    
+      </div>
+      <div class="where">
+        <div class="where-text">
+          <h1 class="gold">Kde?</h2> 
+          <div class="white">
+            <tspan x="0" y="0"><h2>Kultúrny Dom</h2></tspan>
+            <tspan x="0" y="10"><h2>Oravská Pruba</h2></tspan>
+          </div>
+        </div>
+        <hr class="hor-line">    
+      </div>
+    </div>
+    <div class="timer">
+      <h1 id="demo" class="demo-text gold"></h1>
+      <div class="timer-text white">
+        <h2 class="timer-subtext">dní</h2>
+        <h2 class="timer-subtext">hodín</h2>
+        <h2 class="timer-subtext">minút</h2>
+        <h2 class="timer-subtext">sekúnd</h2>
+      </div>
+    </div>
+    <div class="map">
+      <iframe title="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.3157110631196!2d19.2622085768038!3d49.194570176989224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4715af1477b29a91%3A0x41a80b3bc38a9838!2sKult%C3%BArny%20dom%20Oravsk%C3%A1%20Poruba!5e0!3m2!1ssk!2scz!4v1697385879565!5m2!1ssk!2scz"
+        style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    <h1 class="gold demo-text">Tešíme sa na Vás!</h1>
+  </div>
+  
 </body>
 </html>
